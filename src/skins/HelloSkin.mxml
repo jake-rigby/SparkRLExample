@@ -12,7 +12,7 @@
 	name=close, type=org.osflash.signals.Signal, required=false
 	-->
 	
-	<components:ViewPanel id="panel" closeButtonEnabled="true" headerVisible="false"> <!-- this is a required skinpart that enables dragging, resizing etc.. -->
+	<components:ViewPanel id="panel" closeButtonEnabled="true" includeHeader="false"> <!-- this is a required skinpart that enables dragging, resizing etc.. -->
 		<s:Label fontSize="40" text="HELLO CRUEL WORLD!"/>
 	</components:ViewPanel>
 

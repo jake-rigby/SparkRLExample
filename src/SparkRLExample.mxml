@@ -4,7 +4,7 @@
 			   xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:local="*" xmlns:main="main.*">
 	
 	<fx:Declarations>
-		<main:SparkRLExampleContext contextView="{this}"/>
+		<local:SparkRLExampleContext contextView="{this}"/>
 	</fx:Declarations>
 	
 	<!-- required - ensure the default.css file in the library is exported as an asset if compiling from source -->
