@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" 
+		xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:components="uk.co.jakerigby.sparkrl.framework.ui.components.*" xmlns:signals="org.osflash.signals.*">
+	<!-- host component -->
+	<fx:Metadata>
+		[HostComponent("views.Menu")]
+	</fx:Metadata>
+	
+	<!-- SkinParts
+	name=panel, type=uk.co.jakerigby.sparkrl.framework.ui.components.ViewPanel, required=true
+	name=sayHello, type=org.osflash.signals.Signal, required=false
+	name=close, type=org.osflash.signals.Signal, required=false
+	-->
+	<fx:Declarations>
+		<signals:Signal id="sayHello"/> <!-- signals are handy as skin parts in declaration tags so tmediator can use them as an api -->
+	</fx:Declarations>
+	
+	<components:ViewPanel id="panel" resizeEnabled="true"  title="Menu"><!-- this is a required skinpart that enables dragging, resizing etc.. -->
+		<s:Button label="Say hello" click="{sayHello.dispatch()}"/> 
+	</components:ViewPanel>
+
+</s:Skin>
